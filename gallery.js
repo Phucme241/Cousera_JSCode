@@ -5,7 +5,7 @@ var showIndex = 0;
 function upDate(previewPic){
     console.log("update");
     choosingImage.textContent = previewPic.alt;
-    choosingImage.style.backgroundImage = "url('"+previewPic.src+"')";
+    choosingImage.style.backgroundImage = "url('"+ previewPic.src +"')";
 	}
 
 	function unDo(){
