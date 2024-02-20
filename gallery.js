@@ -18,3 +18,17 @@ function addTabIndexes() {
         previews[i].setAttribute("tabindex", "0");
     }
 }
+function tap() {
+    console.log("tap");
+    const previews = document.querySelectorAll(".preview");
+    if(showIndex > 0)upDate(previews[showIndex-1]);
+  else unDo();
+    showIndex = (showIndex + 1) % (previews.length +1);
+}
+function focus(){
+  showIndex = 1;
+}
+function blur(){
+  showIndex = 0;
+  unDo();
+}
