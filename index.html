@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="gallery.css">
-	<script src = "function.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="function.js"></script>
 </head>
-<body>
-	
-	<div id = "image">
-		Hover over an image below to display here.
-	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+<body onload="addTabIndexes()">
+    
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+    
+    <img class="preview" alt="Styling with a Bandana" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" 
+	    onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+    
+    <img class="preview" alt="With My Boy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" 
+	    onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+    
+    <img class="preview" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt="Young Puppy" 
+	    onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+
+    <img class="preview" alt="Boy Play With Cat" src="https://img.artpal.com/18075/69-15-11-29-14-11-31m.jpg" 
+	    onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+    
+    <img class="preview" alt="Sleep Together" src="https://images.pexels.com/photos/9100325/pexels-photo-9100325.jpeg?cs=srgb&dl=pexels-yulia-kharashkevich-9100325.jpg&fm=jpg" 
+	    onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+    
+    <img class="preview" src="https://www.purina.co.uk/sites/default/files/styles/ttt_image_original/public/2020-12/Teaching%20Children%20to%20Care%20for%20Cats%20and%20Dogs1.jpg?itok=AEcgbZ_R" alt="Hide And Seek" 
+	    onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+    
+    <script src="script.js"></script>
 </body>
 </html>
