@@ -8,7 +8,7 @@ function upDate(previewPic){
 
 function unDo(){
     console.log("undo");
-    choosingImage.textContent = defaultContent;
+    choosingImage.textContent = defaultContext;
 }
 
 function addTabIndexes() {
