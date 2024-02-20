@@ -3,12 +3,12 @@ const choosingImage = document.getElementById("image");
 const defaultContext = "Hover over an image below to display here.";
 function upDate(previewPic){
     console.log("update");
-    choosingImage.textContent = "100";
+    choosingImage.textContent = previewPic.alt;
 }
 
 function unDo(){
     console.log("undo");
-    choosingImage.textContent = "200";
+    choosingImage.textContent = defaultContent;
 }
 
 function addTabIndexes() {
